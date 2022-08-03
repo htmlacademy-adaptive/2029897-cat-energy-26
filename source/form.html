@@ -21,13 +21,13 @@
       <div class="navigation-menu__wrapper">
         <ul class="navigation-menu__list">
           <li class="navigation-menu__item">
-            <a class="navigation-menu__link">Главная</a>
+            <a class="navigation-menu__link" href="index.html">Главная</a>
           </li>
           <li class="navigation-menu__item">
-            <a class="navigation-menu__link">Каталог продукции</a>
+            <a class="navigation-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation-menu__item">
-            <a class="navigation-menu__link">Подбор программы</a>
+            <a class="navigation-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -35,43 +35,47 @@
   </header>
   <!-- шапка -->
 
-  <main class="main-container">
+  <main class="page-main">
     <section class="program">
       <h1 class="program__title">Подбор программы</h1>
       <p class="program__desc">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <!-- ФОРМА-->
       <form class="program__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="program__cat">
-          <legend class="program__cat-title visually hidden">ДАННЫЕ КОТА</legend>
-          <label class="program__cat-name">Имя:<sup>*</sup><input class="program__cat-name-input" type="text"
+        <!-- данные кота -->
+        <fieldset class="program__fieldset program__fieldset--cat">
+          <legend class="visually hidden">ДАННЫЕ КОТА</legend>
+          <label class="program__label program__label--cat-name">
+            Имя:<sup>*</sup><input class="program__input program__input--cat-name" type="text"
               name="cat-name" id="cat-name" placeholder="БАРСИК"></label>
-          <label class="program__cat-weight">Вес(кг):<sup>*</sup><input class="program__cat-weight-input" type="number"
+          <label class="program__label program__label--cat-weight">
+            Вес(кг):<sup>*</sup><input class="program__input program__input--cat-weight" type="number"
               name="cat-weight" id="cat-weight" placeholder="7"></label>
-          <label class="program__cat-age">Возраст(лет):<sup>*</sup><input class="program__cat-age-input" type="number"
+          <label class="program__label program__label--cat-age">
+            Возраст(лет):<sup>*</sup><input class="program__input program__input--cat-age" type="number"
               name="cat-age" id="cat-age" placeholder="7"></label>
         </fieldset>
         <!-- радио кнопки -->
-        <fieldset class="program__choice">
-          <legend class="program__choice-title visually hidden">Выбор программы</legend>
+        <fieldset class="program__fieldset program__fieldset--choice">
+          <legend class="visually hidden">Выбор программы</legend>
           <ul class="program__choice-list">
             <li class="program__choice-item">
-              <label class="program__control">
-                <input class="program__control-input" type="radio" name="control-radio" value="pohudenie">
+              <label class="program__label program__label--radio-field">
+                <input class="program__input program__input--radio-field" type="radio" name="control-radio" value="pohudenie">
                 <span class="program__control-mark"></span>
                 <span>Похудение</span>
               </label>
             </li>
             <li class="program__choice-item">
-              <label class="program__control">
-                <input class="program__control-input" type="radio" name="control-radio" value="pohudenie">
+              <label class="program__label program__label--radio-field">
+                <input class="program__input program__input--radio-field" type="radio" name="control-radio" value="pohudenie">
                 <span class="program__control-mark"></span>
                 <span>Набор массы</span>
               </label>
             </li>
             <li class="program__choice-item">
-              <label class="program__control">
-                <input class="program__control-input" type="radio" name="control-radio" value="pohudenie">
+              <label class="program__label program__label--radio-field">
+                <input class="program__input program__input--radio-field" type="radio" name="control-radio" value="pohudenie">
                 <span class="program__control-mark"></span>
                 <span>Незнаю(нужен ваш совет)</span>
               </label>
@@ -79,47 +83,47 @@
           </ul>
         </fieldset>
         <!-- данные владельца -->
-        <fieldset class="program__owner">
-          <legend class="program__owner-title">Контактные данные(владельца кота)</legend>
-          <label class="program__owner-email">E-MAIL:<sup>*</sup><input class="program__owner-input" type="email"
+        <fieldset class="program__fieldset program__fieldset--owner">
+          <legend class="program__title program__title--owner">Контактные данные(владельца кота)</legend>
+          <label class="program__label program__label--owner-email">E-MAIL:<sup>*</sup><input class="program__owner-input" type="email"
               name="owner-input" id="owner-input" placeholder="kuklachev@gmail.com"></label>
-          <label class="program__owner-phone">ТЕЛЕФОН:<sup>*</sup><input class="program__owner-phone" type="tel"
+          <label class="program__label program__label--owner-phone">ТЕЛЕФОН:<sup>*</sup><input class="program__owner-phone" type="tel"
               name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90"></label>
         </fieldset>
         <!-- комментарий -->
-        <fieldset class="program__comment">
-          <legend class=program__comment-title>Комментарий</legend>
+        <fieldset class="program__fieldset program__fieldset--comment">
+          <legend class="program__title program__title--comment">Комментарий</legend>
           <textarea class="program__comment-textarea" rows="8" name="comment-textarea"
             id="comment-textarea">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <!-- дополнительно чекбоксы-->
-        <fieldset class="program__additionally">
-          <legend class="program__additionally-title">Дополнительно</legend>
+        <fieldset class="program__fieldset program__fieldset--additionally">
+          <legend class="program__title program__title--additionally">Дополнительно</legend>
           <ul class="program__additionally-list">
-            <li class="program__additionally-itim">
-              <label class="program__control">
-                <input class="program__control-input" type="checkbox" name="sugar-substituter" checked>
+            <li class="program__additionally-item">
+              <label class="program__label program__label--checkbox-field">
+                <input class="program__input program__input--checkbox-field" type="checkbox" name="sugar-substituter" checked>
                 <span class="program__control-mark"></span>
                 <span>Сахарозаменитель</span>
               </label>
             </li>
-            <li class="program__additionally-itim">
-              <label class="program__control">
-                <input class="program__control-input" type="checkbox" name="water">
+            <li class="program__additionally-item">
+              <label class="program__label program__label--checkbox-field">
+                <input class="program__input program__input--checkbox-field" type="checkbox" name="water">
                 <span class="program__control-mark"></span>
                 <span>Питьевая вода</span>
               </label>
             </li>
-            <li class="program__additionally-itim">
-              <label class="program__control">
-                <input class="program__control-input" type="checkbox" name="milk">
+            <li class="program__additionally-item">
+              <label class="program__label program__label--checkbox-field">
+                <input class="program__input program__input--checkbox-field" type="checkbox" name="milk">
                 <span class="program__control-mark"></span>
                 <span>Молоко</span>
               </label>
             </li>
-            <li class="program__additionally-itim">
-              <label class="program__control">
-                <input class="program__control-input" type="checkbox" name="vitamins">
+            <li class="program__additionally-item">
+              <label class="program__label program__label--checkbox-field">
+                <input class="program__input program__input--checkbox-field" type="checkbox" name="vitamins">
                 <span class="program__control-mark"></span>
                 <span>Витамины</span>
               </label>
@@ -135,26 +139,20 @@
   </main>
 
   <!-- ФУТЕР -->
-  <!-- ФУТЕР -->
-  <footer class="footer-contanier">
-    <!-- адрес -->
-    <section class="address">
-      <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    </section>
-    <!-- карта -->
+  <footer class="page-footer">
+    <!-- карта и адрес -->
     <section class="map">
+      <section class="address">
+        <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
       <img class="map__img" src="img/map.png" width="320" height="362" alt="карта">
-      <!-- контакты -->
     </section>
+    <!-- контакты -->
     <section class="contacts">
-      <!-- ccалка cat energy -->
-      <div class="contacts__wrapper-link">
+      <h3 class="visually-hidden">Контакты</h3>
         <a class="contacts__link" href="index-mobile.html">CAT ENERGY</a>
-      </div>
       <!-- социальные сети -->
-      <div class="contacts__wrapper-social">
-        <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="contacts__social-list">
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="https://vk.com/htmlacademy">
@@ -189,11 +187,11 @@
             </a>
           </li>
         </ul>
-      </div>
+
       <!-- html академия -->
-      <div class="contacts-html__wrapper">
-        <a class="contacts-html__link-name" href="htmlacademy.ru">HTML Academy</a>
-        <a class="contacts-html__link-logo" href="htmlacademy.ru">
+      <div class="contacts__copyright">
+        <a class="contacts__copyright-name" href="htmlacademy.ru">HTML Academy</a>
+        <a class="contacts__copyright-logo" href="htmlacademy.ru">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"

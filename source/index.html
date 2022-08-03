@@ -8,56 +8,54 @@
 
 <body class="page__body">
   <!-- шапка -->
-  <header class="header">
-    <a class="header__logo" href="index-mobile.html">
+  <header class="page__header header">
+    <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэтэнерджи">
     </a>
-    <a class="header__link" href="index-mobile.html">CAT ENERGY</a>
+    <a class="header__link" href="index.html">CAT ENERGY</a>
     <!-- меню навигации -->
-    <nav class="navigation-menu">
+    <nav class="header__ navigation navigation-menu">
       <button class="navigation-menu__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="navigation-menu__wrapper">
-        <ul class="navigation-menu__list">
-          <li class="navigation-menu__item">
-            <a class="navigation-menu__link">Главная</a>
-          </li>
-          <li class="navigation-menu__item">
-            <a class="navigation-menu__link">Каталог продукции</a>
-          </li>
-          <li class="navigation-menu__item">
-            <a class="navigation-menu__link">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="navigation-menu__list">
+        <li class="navigation-menu__item">
+          <a class="navigation-menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-menu__item">
+          <a class="navigation-menu__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation-menu__item">
+          <a class="navigation-menu__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <!-- шапка -->
 
-  <main class="main-contenier">
+  <main class="page__main">
 
     <section class="food">
 
-      <div class="food__food-promo">
+      <article class="food__food-promo">
         <h1 class="food__title">Функциональное питание для котов</h1>
-          <p class="food__lead">Занялся собой? Займись котом!</p>
-          <img class="food__image" src="img/index-can-mobile.png" width="280" height="270" alt="Кошачий корм">
-          <a class="food__button" href="#">Подобрать программу</a>
-      </div>
+        <p class="food__lead">Занялся собой? Займись котом!</p>
+        <img class="food__image" src="img/index-can-mobile.png" width="280" height="270" alt="Кошачий корм">
+        <a class="food__button" href="#">Подобрать программу</a>
+      </article>
 
-      <ul class="food__food-list">
-        <li class="food__food-item">
-          <h3 class="food-item__title">Похудение</h3>
-          <p class="food-item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+      <ul class="food__list">
+        <li class="food__item food__item--slim">
+          <h3 class="food__item-title">Похудение</h3>
+          <p class="food__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="food-item__link" href="#">Каталог Slim</a>
+          <a class="food__item-link" href="#">Каталог Slim</a>
         </li>
-        <li class="food__food-item">
-          <h3 class="food-item__title">Набор массы</h3>
-          <p class="food-item__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+        <li class="food__item food__item--pro">
+          <h3 class="food__item-title">Набор массы</h3>
+          <p class="food__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
             Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="food-item__link" href="#">Каталог PRO</a>
+          <a class="food__item-link" href="#">Каталог PRO</a>
         </li>
       </ul>
 
@@ -68,16 +66,16 @@
     <section class="actions">
       <h2 class="actions__title">Как это работает</h2>
       <ul class="actions__list">
-        <li class="actions__item">
+        <li class="actions__item actions__item--icon-leaf">
           <p class="actions__desc">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="actions__item">
+        <li class="actions__item actions__item--icon-tub">
           <p class="actions__desc">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="actions__item">
+        <li class="actions__item actions__item--icon-eat">
           <p class="actions__desc">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="actions__item">
+        <li class="actions__item actions__item--icon-alarm">
           <p class="actions__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -91,17 +89,15 @@
         в день.</p>
       <div class="example__weight">
         <dl class="example__description">
-          <dt class="example__weight-kg">5кг</dt>
-          <dd class="example__definition">Снижение веса</dd>
+          <dt class="example__data-title">5кг</dt>
+          <dd class="example__data-description">Снижение веса</dd>
         </dl>
-      </div>
-      <div class="example__days">
         <dl class="example__description">
-          <dt class="example__number-days">60 дней </dt>
-          <dd class="example__definition">Затрачено времени</dd>
+          <dt class="example__data-title">60 дней </dt>
+          <dd class="example__data-description">Затрачено времени</dd>
         </dl>
-        <p class="example__expenses">Затраты на питание: 15 000 РУБ.</p>
       </div>
+      <p class="example__expenses">Затраты на питание: 15 000 РУБ.</p>
       <img class="example__img" src="img/cat-big.png" width="280" height="232" alt="толстый кот">
       <div class="example__toggle">
         <button class="example__btn-before" type="button">Было</button>
@@ -113,27 +109,21 @@
     </section>
   </main>
 
-    <!-- ФУТЕР -->
-    <!-- ФУТЕР -->
-  <footer class="footer-contanier">
-    <!-- адрес -->
-    <section class="address">
-      <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    </section>
-    <!-- карта -->
+  <!-- ФУТЕР -->
+  <footer class="page-footer">
+    <!-- карта и адрес -->
     <section class="map">
+      <section class="address">
+        <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
       <img class="map__img" src="img/map.png" width="320" height="362" alt="карта">
-      <!-- контакты -->
     </section>
+    <!-- контакты -->
     <section class="contacts">
-      <!-- ccалка cat energy -->
-      <div class="contacts__wrapper-link">
+      <h3 class="visually-hidden">Контакты</h3>
         <a class="contacts__link" href="index-mobile.html">CAT ENERGY</a>
-      </div>
       <!-- социальные сети -->
-      <div class="contacts__wrapper-social">
-        <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="contacts__social-list">
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="https://vk.com/htmlacademy">
@@ -168,11 +158,11 @@
             </a>
           </li>
         </ul>
-      </div>
+
       <!-- html академия -->
-      <div class="contacts-html__wrapper">
-        <a class="contacts-html__link-name" href="htmlacademy.ru">HTML Academy</a>
-        <a class="contacts-html__link-logo" href="htmlacademy.ru">
+      <div class="contacts__copyright">
+        <a class="contacts__copyright-name" href="htmlacademy.ru">HTML Academy</a>
+        <a class="contacts__copyright-logo" href="htmlacademy.ru">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
