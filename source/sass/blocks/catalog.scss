@@ -1,0 +1,131 @@
+.catalog__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 41px;
+  padding-left: 20px;
+
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  padding: 19px 19px 25px 20px;
+  height: 209px;
+  display: grid;
+  grid-template-columns: 105px 140px;
+  grid-template-rows:  43px 45px 39px;
+  column-gap: 36px;
+  row-gap: 22px;
+  ;
+}
+
+.catalog__item-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.catalog__img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-items: center;
+}
+
+.catalog__features {
+  margin: 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__features-list {
+  padding: 0;
+  list-style: none;
+  grid-row: 2/3;
+  display: grid;
+
+}
+
+.catalog__features-meaning {
+  margin: 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+.catalog__features-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog__btn-order {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  width: 280px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #68B738;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__show-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__show-title {
+  margin-top: 78px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__show-desc {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__btn-show {
+  width: 280px;
+  height: 40px;
+  color: #444444;
+  background-color: #F2F2F2;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

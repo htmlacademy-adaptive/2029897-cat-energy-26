@@ -1,0 +1,27 @@
+.address {
+  display: flex;
+  min-height: 112px;
+  align-items: center;
+  padding: 26px 20px;
+  background-color: #F2F2F2;
+}
+
+.address__text {
+margin: 0;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+.address__place {
+margin: 0;
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #444444;
+}

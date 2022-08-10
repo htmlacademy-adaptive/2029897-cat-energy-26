@@ -1,7 +1,23 @@
 .header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px 17px;
   min-height: 64px;
+}
+
+.navigation-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-menu__link {
+  color: black;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
 }
