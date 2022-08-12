@@ -1,6 +1,6 @@
 .example {
   padding: 25px 20px 40px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .example__title {
@@ -14,7 +14,7 @@
 .example__text {
   margin: 0;
   margin-bottom: 20px;
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -32,7 +32,7 @@
 }
 
 .example__data-title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -40,7 +40,7 @@
 }
 
 .example__data-description {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -52,7 +52,7 @@
 .example__expenses {
   margin: 0;
   margin-bottom: 40px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -66,13 +66,12 @@
 
 .example__toggle {
   display: flex;
-
 }
 
 .example__btn {
   width: 49px;
   height: 30px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

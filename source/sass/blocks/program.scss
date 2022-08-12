@@ -1,5 +1,5 @@
 .program__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -33,7 +33,7 @@
   margin: 0;
   margin-bottom: 39px;
   margin-left: 20px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -52,10 +52,12 @@
 
 .program__fieldset--cat {
   padding: 0 20px 25px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program__fieldset--choice {
   padding: 25px 23px 20px 20px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program__fieldset--owner {
@@ -73,8 +75,13 @@
 }
 
 .program__label {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+}
+
+.program__label--radio-field {
   display: flex;
-  text-align: center;
 }
 
 .program__label--cat-name {
@@ -85,16 +92,12 @@
   margin-bottom: 10px;
 }
 
-.program__label--cat-age {
-
-}
-
 .program__input {
   height: 46px;
   width: 100%;
   margin: 0;
   padding-left: 16px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -125,7 +128,6 @@
 
 .program__name-label {
   align-self: center;
-  padding-right: 10px;
 }
 
 .program__choice-item {
@@ -145,7 +147,7 @@
 }
 
 .program__comment-textarea {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -160,7 +162,7 @@
   width: 280px;
   height: 40px;
   color: #ffffff;
-  background-color: #68B738;
+  background-color: #68b738;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -172,7 +174,7 @@
 }
 
 .program__necessarily-text {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -180,4 +182,7 @@
   margin: 21px 81px 32px;
 }
 
+.program__title-vis-hid {
+  @include visually-hidden;
+}
 

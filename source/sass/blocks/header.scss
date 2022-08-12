@@ -4,20 +4,17 @@
   align-items: center;
   padding: 10px 20px 17px;
   min-height: 64px;
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
 }
 
-.navigation-menu__list {
-  margin: 0;
+.navigation-menu__toggle {
+  width: 24px;
+  height: 24px;
+  border: none;
   padding: 0;
-  list-style: none;
-}
-
-.navigation-menu__link {
-  color: black;
-  text-decoration: none;
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url("../img/btn-header.svg");
+  background-repeat: no-repeat;
 }
