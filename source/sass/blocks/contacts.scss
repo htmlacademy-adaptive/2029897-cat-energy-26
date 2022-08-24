@@ -1,4 +1,9 @@
 .contacts {
+  width: 100%;
+}
+
+.contacts__wrap {
+  @include centre;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,4 +55,41 @@
   margin-left: auto;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrap {
+    width: 768px;
+    min-height: 147px;
+    flex-direction: row;
+    padding: 56px 30px;
+  }
+
+  .contacts__link {
+    margin: 0;
+  }
+
+  .contacts__social-list-wrap {
+    border: none;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .contacts__copyright {
+    margin: 0;
+    width: 163px;
+    flex-wrap: wrap;
+  }
+
+  .contacts__copyright-name {
+    width: 114px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrap {
+    width: 1440px;
+    padding: 57px 110px 58px;
+  }
 }

@@ -1,3 +1,13 @@
+.navigation-menu__toggle {
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
 .navigation-menu__list {
   @include list-reset;
   position: absolute;
@@ -25,4 +35,62 @@
 
 .navigation-menu__toggle-text {
   @include visually-hidden;
+}
+
+// Только мобильная версия
+@media (max-width: $mobile-width-only) {
+  .navigation-menu--open .navigation-menu__toggle {
+    background-image: url("../img/btn-header-open.svg");
+  }
+
+  .navigation-menu--close .navigation-menu__toggle {
+    background-image: url("../img/btn-header-close.svg");
+  }
+
+  .navigation-menu--close .navigation-menu__list {
+    display: block;
+  }
+}
+
+// Планшетная версия
+@media (min-width: $tablet-width) {
+  .navigation-menu__toggle {
+    display: none;
+  }
+
+  .navigation-menu__list {
+    display: flex;
+    position: static;
+  }
+
+  .navigation-menu__item {
+    margin-right: 35px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .navigation-menu__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    padding: 0;
+  }
+}
+
+// десктопная версия
+@media (min-width: $desktop-width) {
+  .navigation-menu__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .navigation-menu__item {
+    margin-right: 37px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

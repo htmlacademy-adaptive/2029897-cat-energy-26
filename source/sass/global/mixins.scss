@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+@mixin centre {
+  width: 320px;
+  margin: 0 auto;
+}
+
 @mixin visually-hidden {
   position: absolute;
   width: 1px;

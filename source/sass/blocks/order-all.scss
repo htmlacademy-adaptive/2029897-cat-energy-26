@@ -1,9 +1,15 @@
 .order-all {
+  width: 100%;
+}
+
+.order-all__wrap {
   width: 280px;
   height: 290px;
-  margin: 35px 20px;
+  margin: 0 auto;
   padding: 186px 61px 43px 58px;
   background-image: url("../img/background-catalog.jpg");
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .order-all__desc {
