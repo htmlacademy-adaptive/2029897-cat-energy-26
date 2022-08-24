@@ -19,6 +19,10 @@
     width: 708px;
     padding: 24px 0 32px 0;
   }
+
+  .header__logo-text {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -26,5 +30,9 @@
     width: 1220px;
     padding: 53px 0 32px 0;
     border: none;
+  }
+
+  .header__logo-text {
+    display: none;
   }
 }
