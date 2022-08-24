@@ -1,3 +1,11 @@
+.program {
+  width: 100%;
+}
+
+.program__wrap {
+  @include centre;
+}
+
 .program__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -185,4 +193,3 @@
 .program__title-vis-hid {
   @include visually-hidden;
 }
-
