@@ -22,3 +22,14 @@
   color: #ffffff;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .order-all__wrap {
+    width: 708px;
+    height: 200px;
+    margin-top: 69px;
+    margin-bottom: 76px;
+    background-image: url("../img/order-tablet-img.jpg");
+    background-repeat: no-repeat;
+  }
+}

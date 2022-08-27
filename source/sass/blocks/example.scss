@@ -1,12 +1,11 @@
 .example {
-  width: 100%;
+  background-color: #eaeaea;
 }
 
 .example__wrap {
   padding: 25px 20px 40px;
   margin: 0 auto;
   width: 320px;
-  background-color: #eaeaea;
 }
 
 
@@ -110,11 +109,15 @@
 
 // Планшетная версия
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
   .example__wrap {
     width: 768px;
     background-color: #ffffff;
     padding: 43px 30px 101px 30px;
-    border-top: 2px solid red;
+    border-top: 2px solid #000000;
     position: relative;
   }
 
