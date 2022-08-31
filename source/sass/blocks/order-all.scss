@@ -1,7 +1,3 @@
-.order-all {
-  width: 100%;
-}
-
 .order-all__wrap {
   width: 280px;
   height: 290px;
@@ -31,5 +27,33 @@
     margin-bottom: 76px;
     background-image: url("../img/order-tablet-img.jpg");
     background-repeat: no-repeat;
+    padding: 0;
+    position: relative;
+  }
+
+  .order-all__desc {
+    width: 180px;
+    text-align: start;
+    top: 65px;
+    position: absolute;
+    right: 107px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-all {
+    align-self: flex-end;
+  }
+
+
+  .order-all__wrap {
+    margin: 0;
+    width: 245px;
+    min-height: 289px;
+    background-image: url("../img/order-desktop-img.jpg");
+  }
+
+  .order-all__desc {
+    right: 10px;
   }
 }

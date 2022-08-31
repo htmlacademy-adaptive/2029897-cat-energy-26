@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -49,7 +50,11 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img class="catalog__img" src="img/chicken-little.png" width="68" height="86" alt="курица маленькая">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/chicken-little-desktop@1x.png 1x, img/chicken-little-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-little-tablet@1x.png 1x, img/chicken-little-tablet@2x.png 2x">
+            <img class="catalog__img" src="img/chicken-little@1x.png" srcset="img/chicken-little@2x.png 2x" alt="курица маленькая">
+          </picture>
             <h2 class="catalog__item-title">Cat Energy<br> PRO 500 г</h3>
               <ul class="catalog__features-list">
                 <li class="catalog__features-item">
@@ -68,7 +73,11 @@
               <a class="catalog__btn-order" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__img" src="img/chicken-big.png" width="84" height="100" alt="курица большая">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+            <img class="catalog__img" src="img/chicken-big@1x.png" srcset="img/chicken-big@2x.png 2x" alt="курица большая">
+          </picture>
             <h2 class="catalog__item-title">Cat Energy<br> PRO 1000 г</h3>
               <ul class="catalog__features-list">
                 <li class="catalog__features-item">
@@ -87,7 +96,11 @@
               <a class="catalog__btn-order" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__img" src="img/fish-little.png" width="68" height="78" alt="рыба маленькая">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/fish-little-desktop@1x.png 1x, img/fish-little-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-little-tablet@1x.png 1x, img/fish-little-tablet@2x.png 2x">
+            <img class="catalog__img" src="img/fish-little@1x.png" srcset="img/fish-little@2x.png 2x" alt="рыба маленькая">
+          </picture>
             <h2 class="catalog__item-title">Cat Energy<br> PRO 500 г</h3>
               <ul class="catalog__features-list">
                 <li class="catalog__features-item">
@@ -106,7 +119,11 @@
               <a class="catalog__btn-order" href="#">Заказать</a>
 
           <li class="catalog__item">
-            <img class="catalog__img" src="img/fish-big.png" width="84" height="100" alt="рыба большая">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+            <img class="catalog__img" src="img/fish-big@1x.png" srcset="img/fish-big@2x.png 2x" alt="рыба большая">
+          </picture>
             <h2 class="catalog__item-title">Cat Energy<br> PRO 1000 г</h3>
               <ul class="catalog__features-list">
                 <li class="catalog__features-item">
@@ -125,7 +142,11 @@
               <a class="catalog__btn-order" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__img" src="img/buckwheat-little.png" width="68" height="78" alt=" гречка маленькая">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/buckwheat-little-desktop@1x.png 1x, img/buckwheat-little-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-little-tablet@1x.png 1x, img/buckwheat-little-tablet@2x.png 2x">
+            <img class="catalog__img" src="img/buckwheat-little@1x.png" srcset="img/buckwheat-little@2x.png 2x" alt="гречка маленькая">
+          </picture>
             <h2 class="catalog__item-title">Cat Energy<br> SLIM 500 г</h3>
               <ul class="catalog__features-list">
                 <li class="catalog__features-item">
@@ -144,7 +165,11 @@
               <a class="catalog__btn-order" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__img" src="img/buckwheat-big.png" width="84" height="100" alt="гречка большая">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+            <img class="catalog__img" src="img/buckwheat-big@1x.png" srcset="img/buckwheat-big@2x.png 2x" alt="гречка большая">
+          </picture>
             <h2 class="catalog__item-title">Cat Energy<br> SLIM 1000 г</h3>
               <ul class="catalog__features-list">
                 <li class="catalog__features-item">
@@ -163,7 +188,11 @@
               <a class="catalog__btn-order" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__img" src="img/rice-little.png" width="72" height="84" alt="рис маленький">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/rice-little-desktop@1x.png 1x, img/rice-little-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-little-tablet@1x.png 1x, img/rice-little-tablet@2x.png 2x">
+            <img class="catalog__img" src="img/rice-little@1x.png" srcset="img/rice-little@2x.png 2x" alt="гречка маленькая">
+          </picture>
             <h2 class="catalog__item-title">Cat Energy<br> SLIM 500 г</h3>
               <ul class="catalog__features-list">
                 <li class="catalog__features-item">
@@ -181,14 +210,15 @@
               </ul>
               <a class="catalog__btn-order" href="#">Заказать</a>
           </li>
+          <li class="catalog__item catalog__show-wrap">
+            <h2 class="catalog__show-title">Показать еще 100500 товаров</h3>
+              <p class="catalog__show-desc">На самом деле вкусов гораздо больше!</p>
+              <a class="catalog__btn-show" href="#">Показать всё</a>
+          </li>
         </ul>
-        <div class="catalog__show-wrap">
-          <h2 class="catalog__show-title">Показать еще 100500 товаров</h3>
-            <p class="catalog__show-desc">На самом деле вкусов гораздо больше!</p>
-            <a class="catalog__btn-show" href="#">Показать всё</a>
-        </div>
-      </div>
     </section>
+
+    <div class="page-wrapper">
 
     <!-- дополнительные товары -->
     <section class="additional-products">
@@ -233,9 +263,10 @@
     <!-- блок заказать всё -->
     <div class="order-all">
       <div class="order-all__wrap">
-      <p class="order-all__desc">Закажите всё<br> и получите чехол для<br> кота в подарок!</p>
+        <p class="order-all__desc">Закажите всё<br> и получите чехол для<br> кота в подарок!</p>
+      </div>
     </div>
-    </div>
+  </div>
   </main>
 
   <!-- ФУТЕР -->
@@ -243,13 +274,18 @@
     <!-- карта и адрес -->
     <section class="address">
       <div class="address__wrap">
-        <div class="address__flex">
+        <div class="address__flex address__flex--white-background ">
           <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
           <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="map__img" src="img/map.png" width="320" height="362" alt="карта">
+        <h3 class="address__iframe-title">Как до нас добраться</h3>
       </div>
+      <iframe class="address__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1137.9938012736925!2d30.322026232971236!3d59.938711072594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661148608033!5m2!1sru!2sru"
+        width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
     <!-- контакты -->
     <section class="contacts">
       <div class="contacts__wrap">
@@ -342,6 +378,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/app.js"></script>
 
 </body>
 

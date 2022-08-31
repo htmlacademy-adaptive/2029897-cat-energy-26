@@ -1,0 +1,9 @@
+@media (min-width: $desktop-width) {
+  .page-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 110px 86px;
+    gap: 80px;
+  }
+}

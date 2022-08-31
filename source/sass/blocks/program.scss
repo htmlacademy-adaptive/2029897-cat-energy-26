@@ -88,8 +88,48 @@
   gap: 10px;
 }
 
+.program__label--checkbox-field {
+  display: flex;
+  padding-left: 44px;
+  position: relative;
+}
+
+.program__control-mark-checkbox {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
 .program__label--radio-field {
   display: flex;
+  gap: initial;
+  position: relative;
+  padding-left: 45px;
+}
+
+.program__control-mark-radio {
+  position: absolute;
+  width: 30px;
+  height: 30.1px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  left: 0;
+  top: -5px;
+}
+
+
+.program__input--radio-field:checked + .program__control-mark-radio::before {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.55px;
+  background-color: #68b738;
+  left: 7.2px;
+  top: 7.2px;
+  border-radius: 50%;
 }
 
 .program__label--cat-name {
@@ -122,9 +162,9 @@
   margin: 0;
 }
 
+.program__input--radio-field,
 .program__input--checkbox-field {
-  height: 30px;
-  width: 30px;
+  @include visually-hidden;
 }
 
 .program__choice-list,
@@ -139,7 +179,7 @@
 }
 
 .program__choice-item {
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
@@ -147,11 +187,21 @@
 }
 
 .program__additionally-item {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.program__input--checkbox-field[type="checkbox"]:checked + .program__control-mark-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/tick.svg");
+  left: 3px;
+  top: 5px;
 }
 
 .program__comment-textarea {

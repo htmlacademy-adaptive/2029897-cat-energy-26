@@ -1,7 +1,3 @@
-.address {
-  width: 100%;
-}
-
 .address__wrap {
   @include centre;
 }
@@ -43,13 +39,18 @@
 }
 
 .address__iframe {
-  border: none;
   display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .address__wrap {
     width: 768px;
+  }
+
+  .address__iframe {
+    height: 400px;
   }
 
   .address__flex {
@@ -84,6 +85,6 @@
     padding: 56px 80px;
     width: 565px;
     height: 198px;
-    background-color: #edf4c0;
+    background-color: #ffffff;
   }
 }
