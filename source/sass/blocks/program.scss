@@ -1,7 +1,3 @@
-.program {
-  width: 100%;
-}
-
 .program__wrap {
   @include centre;
 }
@@ -88,8 +84,48 @@
   gap: 10px;
 }
 
+.program__label--checkbox-field {
+  display: flex;
+  padding-left: 44px;
+  position: relative;
+}
+
+.program__control-mark-checkbox {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
 .program__label--radio-field {
   display: flex;
+  gap: initial;
+  position: relative;
+  padding-left: 45px;
+}
+
+.program__control-mark-radio {
+  position: absolute;
+  width: 30px;
+  height: 30.1px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  left: 0;
+  top: -5px;
+}
+
+
+.program__input--radio-field:checked + .program__control-mark-radio::before {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.55px;
+  background-color: #68b738;
+  left: 7.2px;
+  top: 7.2px;
+  border-radius: 50%;
 }
 
 .program__label--cat-name {
@@ -122,9 +158,9 @@
   margin: 0;
 }
 
+.program__input--radio-field,
 .program__input--checkbox-field {
-  height: 30px;
-  width: 30px;
+  @include visually-hidden;
 }
 
 .program__choice-list,
@@ -139,7 +175,7 @@
 }
 
 .program__choice-item {
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
@@ -147,11 +183,21 @@
 }
 
 .program__additionally-item {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.program__input--checkbox-field[type="checkbox"]:checked + .program__control-mark-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/tick.svg");
+  left: 3px;
+  top: 5px;
 }
 
 .program__comment-textarea {
@@ -192,4 +238,241 @@
 
 .program__title-vis-hid {
   @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .program__wrap {
+    width: 768px;
+    padding: 32px 67px 72px 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 54px;
+  }
+
+  .program__desc {
+    margin: 0;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
+
+  .program__fieldset--cat {
+    padding: 0;
+    margin-bottom: 72px;
+    border: none;
+  }
+
+  .program__label {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .program__fieldset--choice {
+    padding: 25px 28px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .program__control-mark-radio {
+    width: 40px;
+    height: 40px;
+    top: 1px;
+  }
+
+  .program__fieldset--owner {
+    margin-top: 69px;
+    padding: 0;
+  }
+
+  .program__title--comment,
+  .program__title--owner {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .program__fieldset--comment {
+    margin-top: 65px;
+    padding: 0;
+  }
+
+  .program__comment-textarea {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 19px;
+    height: 174px;
+  }
+
+  .program__fieldset--additionally {
+    margin-top: 65px;
+    margin-bottom: 54px;
+    padding: 0;
+  }
+
+  .program__title--additionally {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
+  .program__additionally-list {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 123px;
+    row-gap: 32px;
+  }
+
+  .program__additionally-item {
+    margin: 0;
+    min-width: 221px;
+  }
+
+  .program__label--checkbox-field {
+    padding-left: 59px;
+  }
+
+  .program__control-mark-checkbox {
+    width: 40px;
+    height: 40px;
+    bottom: -6px;
+  }
+
+  .program__input--radio-field:checked + .program__control-mark-radio::before {
+    width: 18px;
+    height: 18px;
+    left: 10.3px;
+    top: 10.3px;
+  }
+
+  .program__button {
+    width: 282px;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    line-height: 0px;
+    height: 52px;
+    margin: 0;
+  }
+
+  .program__wrapper-tablet {
+    display: flex;
+    gap: 61px;
+    align-items: center;
+  }
+
+  .program__necessarily-text {
+    margin: 0;
+  }
+
+  .address__flex {
+    background-color: #f2f2f2;
+  }
+
+  .program__input--checkbox-field[type="checkbox"]:checked + .program__control-mark-checkbox::before {
+    background-image: url("../img/tick-tablet.svg");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    top: 10px;
+    left: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__wrap {
+    padding: 41px 110px 82px;
+    width: 1440px;
+  }
+
+  .program__title {
+    margin-bottom: 56px;
+  }
+
+  .program__desc {
+    margin-bottom: 66px;
+  }
+
+  .program__fieldset--cat {
+    margin: 0%;
+    width: 569px;
+  }
+
+  .program__fieldset--choice {
+    width: 568px;
+  }
+
+  .program-wrapper-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__title--owner {
+    margin-bottom: 76px;
+  }
+
+  .program__fieldset--owner .program__label {
+    margin: 0;
+  }
+
+  .program__fieldset-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__label--owner-email {
+    width: 569px;
+  }
+
+  .program__label--owner-phone {
+    width: 572px;
+  }
+
+  .program__fieldset--comment {
+    margin-top: 65px;
+  }
+
+  .program__title--comment {
+    margin-bottom: 76px;
+  }
+
+  .program__comment-textarea {
+    width: 1120px;
+    height: 174px;
+  }
+
+  .program__fieldset--additionally {
+    margin-top: 57px;
+    margin-bottom: 66px;
+    padding-right: 24px;
+  }
+
+  .program__title--additionally {
+    margin-bottom: 57px;
+  }
+
+  .program__additionally-list {
+    display: flex;
+    gap: 104px;
+  }
+
+  .program__button {
+    width: 568px;
+  }
+
+  .program__necessarily-text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .program__wrapper-tablet {
+    gap: 81px;
+  }
 }

@@ -1,9 +1,6 @@
-.address {
-  width: 100%;
-}
-
 .address__wrap {
-  @include centre;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .address__flex {
@@ -12,10 +9,7 @@
   align-items: center;
   padding: 26px 20px;
   background-color: #f2f2f2;
-}
-
-.address__flex--white-background {
-  background-color: #ffffff;
+  justify-content: space-between;
 }
 
 .address__text {
@@ -26,6 +20,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 134px;
 }
 
 .address__place {
@@ -36,6 +31,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  width: 136px;
 }
 
 .address__iframe-title {
@@ -43,13 +39,18 @@
 }
 
 .address__iframe {
-  border: none;
   display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .address__wrap {
-    width: 768px;
+    width: 100%;
+  }
+
+  .address__iframe {
+    height: 400px;
   }
 
   .address__flex {
@@ -84,6 +85,6 @@
     padding: 56px 80px;
     width: 565px;
     height: 198px;
-    background-color: #edf4c0;
+    background-color: #ffffff;
   }
 }
