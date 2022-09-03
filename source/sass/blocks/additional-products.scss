@@ -23,6 +23,7 @@
 .additional-products__item {
   border-top: 1px solid #cdcdcd;
   margin: 1px 20px 19px;
+
   &:last-child {
     margin: 1px 20px 0;
     padding-bottom: 19px;
@@ -89,6 +90,7 @@
     margin: 0;
     border: 1px solid #cdcdcd;
     border-bottom: none;
+
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
       margin: 0;

@@ -1,5 +1,6 @@
 .address__wrap {
-  @include centre;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .address__flex {
@@ -8,10 +9,7 @@
   align-items: center;
   padding: 26px 20px;
   background-color: #f2f2f2;
-}
-
-.address__flex--white-background {
-  background-color: #ffffff;
+  justify-content: space-between;
 }
 
 .address__text {
@@ -22,6 +20,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 134px;
 }
 
 .address__place {
@@ -32,6 +31,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  width: 136px;
 }
 
 .address__iframe-title {
@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .address__wrap {
-    width: 768px;
+    width: 100%;
   }
 
   .address__iframe {

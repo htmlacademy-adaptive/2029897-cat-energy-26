@@ -25,6 +25,7 @@
   position: relative;
   margin-bottom: 26px;
   padding-left: 80px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -85,21 +86,25 @@
   .actions__item {
     margin: 0;
     padding: 0;
+
     &:nth-child(1) {
       background-image: url("../img/1-actions-item.png");
       background-repeat: no-repeat;
       background-position: 127px 39px;
     }
+
     &:nth-child(2) {
       background-image: url("../img/2-actions-item.png");
       background-repeat: no-repeat;
       background-position: 127px 39px;
     }
+
     &:nth-child(3) {
       background-image: url("../img/3-actions-item.png");
       background-repeat: no-repeat;
       background-position: 127px 39px;
     }
+
     &:nth-child(4) {
       background-image: url("../img/4-actions-item.png");
       background-repeat: no-repeat;
