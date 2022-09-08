@@ -61,6 +61,7 @@
   .navigation-menu__list {
     display: flex;
     position: static;
+    background: rgba(0, 0, 0, 0);
   }
 
   .navigation-menu__item {
@@ -86,6 +87,12 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  .navigation-menu__link--white {
+    color: #ffffff;
   }
 
   .navigation-menu__item {
