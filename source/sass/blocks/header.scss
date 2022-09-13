@@ -8,11 +8,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px 17px;
+  padding: 14px 20px 10px;
   min-height: 64px;
   position: relative;
   border-bottom: 1px solid #ebebeb;
 }
+
+.header__logo-text {
+  padding-right: 12px;
+}
+
+.header__logo-text-img:hover,
+.header__logo-img:hover {
+  opacity: 0.8;
+}
+
+.header__logo-text-img:active,
+.header__logo-img:active {
+  opacity: 0.6;
+}
+
 
 @media (min-width: $tablet-width) {
   .header__wrap {

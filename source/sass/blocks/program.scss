@@ -372,10 +372,6 @@
     margin: 0;
   }
 
-  .address__flex {
-    background-color: #f2f2f2;
-  }
-
   .program__input--checkbox-field[type="checkbox"]:checked + .program__control-mark-checkbox::before {
     background-image: url("../img/tick-tablet.svg");
     background-repeat: no-repeat;
