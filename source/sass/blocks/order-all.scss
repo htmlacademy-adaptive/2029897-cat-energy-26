@@ -2,7 +2,7 @@
   width: 280px;
   height: 290px;
   margin: 0 auto;
-  padding: 186px 61px 43px 58px;
+  padding: 188px 61px 43px 58px;
   background-image: url("../img/background-catalog.jpg");
   margin-top: 35px;
   margin-bottom: 35px;
@@ -23,7 +23,7 @@
   .order-all__wrap {
     width: 708px;
     height: 200px;
-    margin-top: 69px;
+    margin-top: 68px;
     margin-bottom: 76px;
     background-image: url("../img/order-tablet-img.jpg");
     background-repeat: no-repeat;
@@ -34,9 +34,9 @@
   .order-all__desc {
     width: 180px;
     text-align: start;
-    top: 65px;
+    top: 72px;
     position: absolute;
-    right: 107px;
+    right: 105px;
   }
 }
 
@@ -54,6 +54,8 @@
   }
 
   .order-all__desc {
-    right: 10px;
+    right: 35px;
+    top: 186px;
+    text-align: center;
   }
 }

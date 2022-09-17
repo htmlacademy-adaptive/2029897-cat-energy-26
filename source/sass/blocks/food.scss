@@ -117,18 +117,53 @@
   margin-top: 15px;
   margin-bottom: 18px;
   position: relative;
+
+  &:hover {
+    .food__pro-vector,
+    .food__slim-vector {
+      display: none;
+    }
+
+    .food__slim-vector-long,
+    .food__pro-vector-long {
+      display: initial;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .food__slim-vector-long,
+    .food__pro-vector-long {
+      opacity: 0.3;
+    }
+  }
 }
 
-.food__item-link--slim-vector {
+.food__slim-vector {
   position: absolute;
   left: 102px;
   top: 7px;
 }
 
-.food__item-link--pro-vector {
+.food__pro-vector {
   position: absolute;
   left: 100px;
   top: 5px;
+}
+
+.food__slim-vector-long {
+  position: absolute;
+  left: 102px;
+  top: 7px;
+  display: none;
+}
+
+.food__pro-vector-long {
+  position: absolute;
+  left: 100px;
+  top: 5px;
+  display: none;
 }
 
 // Планшетная версия
@@ -228,12 +263,22 @@
     left: -91px;
   }
 
-  .food__item-link--slim-vector {
+  .food__slim-vector {
     left: 133px;
     top: 14px;
   }
 
-  .food__item-link--pro-vector {
+  .food__pro-vector {
+    left: 129px;
+    top: 14px;
+  }
+
+  .food__slim-vector-long {
+    left: 133px;
+    top: 14px;
+  }
+
+  .food__pro-vector-long {
     left: 129px;
     top: 14px;
   }
@@ -310,15 +355,25 @@
     left: 33px;
   }
 
-  .food__item-link--slim-vector {
+  .food__slim-vector {
     left: 136px;
   }
 
-  .food__item-link--pro-vector {
+  .food__pro-vector {
     left: 130px;
   }
 
   .example__range-vector {
     margin-left: -1px;
+  }
+
+  .food__slim-vector-long {
+    left: 136px;
+    top: 14px;
+  }
+
+  .food__pro-vector-long {
+    left: 130px;
+    top: 14px;
   }
 }

@@ -72,7 +72,7 @@
     text-align: end;
   }
 
-  .addres__city {
+  .address__city {
     margin-top: 19px;
     display: inline-block;
   }
@@ -86,11 +86,11 @@
 
   .address__flex {
     position: absolute;
-    top: 119px;
+    top: 93px;
     left: 110px;
     padding: 56px 80px;
     width: 565px;
-    height: 198px;
+    min-height: 198px;
     background-color: #ffffff;
   }
 
