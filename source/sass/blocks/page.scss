@@ -13,11 +13,19 @@
 @media (min-width: $desktop-width) {
   .page__body--image::before {
     content: "";
-    width: 720px;
+    width: 50%;
     height: 694px;
     background-image: url("../img/background-index-desktop.jpg");
     position: absolute;
     top: 0;
     right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #64a83c;
+    background-position-x: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-index-desktop@2x.jpg");
+    }
   }
 }
