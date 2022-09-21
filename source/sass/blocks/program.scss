@@ -208,7 +208,7 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
   &:focus + .program__label-icon-phone,

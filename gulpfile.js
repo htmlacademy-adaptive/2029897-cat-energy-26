@@ -94,7 +94,7 @@ gulp.src (['source/img/*.svg'])
 gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
-  'source/img/favicons'
+  'source/favicons/*'
 ], {
   base: 'source'
 })
@@ -118,11 +118,10 @@ gulp.src([
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(script));
-  gulp.watch('source/*.html').on('change', browser.reload);
-
-}
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/app.js", gulp.series(script));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+};
 
 
 

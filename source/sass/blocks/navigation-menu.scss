@@ -59,10 +59,20 @@
     background-position: 2px 1px;
   }
 
-  .navigation-menu--close .navigation-menu__list {
+  .navigation-menu--no-js {
+    width: 100%;
+  }
+
+  .navigation-menu__toggle {
+    display: none;
+  }
+
+  .navigation-menu__list {
     display: block;
+    position: static;
   }
 }
+
 
 // Планшетная версия
 @media (min-width: $tablet-width) {
