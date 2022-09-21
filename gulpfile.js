@@ -94,6 +94,7 @@ gulp.src (['source/img/*.svg'])
 gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
+  'source/img/favicons'
 ], {
   base: 'source'
 })
