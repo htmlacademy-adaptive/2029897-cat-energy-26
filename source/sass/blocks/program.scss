@@ -209,6 +209,7 @@
 
   &:focus {
     outline: 2px solid #444444;
+    outline-offset: -1px;
   }
 
   &:focus + .program__label-icon-phone,

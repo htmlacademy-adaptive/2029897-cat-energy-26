@@ -15,10 +15,6 @@
   flex-wrap: wrap;
 }
 
-.navigation-menu {
-  width: 100%;
-}
-
 
 .header__logo-text {
   padding-right: 12px;
@@ -45,6 +41,10 @@
 
   .header__logo-text {
     display: none;
+  }
+
+  .navigation-menu {
+    width: auto;
   }
 }
 
