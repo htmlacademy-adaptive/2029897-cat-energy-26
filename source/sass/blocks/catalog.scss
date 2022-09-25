@@ -32,6 +32,10 @@
   &:last-child {
     border-bottom: 1px solid #ebebeb;
   }
+
+  &:nth-child(1) .catalog__img-wrap {
+    margin-top: -11px;
+  }
 }
 
 .catalog__item-title {

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/style.min.css">
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/favicons/favicon-apple.png">
+  <link rel="apple-touch-icon" href="/favicons/favicon-apple.webp">
 </head>
 
 <body class="page__body">
@@ -114,20 +114,23 @@
             src="img/logo-header-mobile.svg" alt="логотип кэт энерджи">
         </picture>
       </a><a class="header__logo-text" href="index.html"><img class="header__logo-text-img"
-          src="img/logo-text-header-mobile.svg" alt="название кэт энерджи"> </a><!-- меню навигации -->
-      <nav class="navigation-menu navigation-menu--open"><button class="navigation-menu__toggle" type="button"><span
-            class="navigation-menu__toggle-text">Открыть меню</span></button>
+          src="img/logo-text-header-mobile.svg" alt="название кэт энерджи"> </a>
+      <!-- меню навигации -->
+      <nav class="navigation-menu  navigation-menu--no-js navigation-menu--open">
+        <button class="navigation-menu__toggle" type="button">
+          <span class="navigation-menu__toggle-text">Открыть меню</span></button>
         <ul class="navigation-menu__list">
-          <li class="navigation-menu__item navigation-menu__item--active-white"><a class="navigation-menu__link"
-              href="index.html">Главная</a></li>
-          <li class="navigation-menu__item"><a class="navigation-menu__link" href="catalog.html">Каталог продукции</a>
-          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__link" href="index.html">Главная</a></li>
+          <li class="navigation-menu__item"><a class="navigation-menu__link"
+              href="catalog.html">Каталог продукции</a></li>
           <li class="navigation-menu__item navigation-menu__item--active"><a class="navigation-menu__link"
               href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <!-- MAIN -->
   <main class="page-main">
     <section class="program">
       <div class="program__wrap">
@@ -182,12 +185,15 @@
                   placeholder="8 (960) 900-60-90"> <svg class="program__label-icon-phone" width="20" height="21">
                   <use href="#icon-phone"></use>
                 </svg></label></div>
-          </fieldset><!-- комментарий -->
+          </fieldset>
+          <!-- комментарий -->
           <fieldset class="program__fieldset program__fieldset--comment">
-            <legend class="program__title program__title--comment">Комментарий</legend><textarea
-              class="program__comment-textarea" rows="8" name="comment-textarea" id="comment-textarea"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset><!-- дополнительно чекбоксы-->
+            <legend class="program__title program__title--comment">Комментарий</legend>
+             <label class="program__label-textarea" for="comment-textarea">Расскажите обо всех повадках кота</label>
+            <textarea class="program__comment-textarea" rows="8" name="comment-textarea" id="comment-textarea"
+              placeholder="Расскажите обо всех повадках кота" maxlength="250"></textarea>
+          </fieldset>
+          <!-- дополнительно чекбоксы-->
           <fieldset class="program__fieldset program__fieldset--additionally">
             <legend class="program__title program__title--additionally">Дополнительно</legend>
             <ul class="program__additionally-list">
@@ -254,7 +260,7 @@
               </svg> <span class="contacts__title">Telegram</span></a></li>
         </ul>
         <!-- html академия -->
-        <div class="contacts__copyright"><a class="contacts__copyright-name" href="htmlacademy.ru">HTML Academy</a> <a
+        <div class="contacts__copyright"><a class="contacts__copyright-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a> <a
             class="contacts__copyright-logo" href="htmlacademy.ru"><svg width="27" height="34">
               <use href="#copyright-logo"></use>
             </svg></a></div>

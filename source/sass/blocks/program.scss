@@ -30,7 +30,7 @@
     content: "";
     background-color: $green;
     height: 2px;
-    width: 99px;
+    width: 1000%;
     top: 15px;
     right: -19px;
   }
@@ -378,6 +378,17 @@
   top: 16px;
   right: 16px;
   color: #222222;
+}
+
+.program__label-textarea {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 

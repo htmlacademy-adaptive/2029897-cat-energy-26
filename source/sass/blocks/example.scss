@@ -184,7 +184,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: #ffffff;
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -282,11 +282,11 @@
 // десктопная версия
 @media (min-width: $desktop-width) {
   .example {
-    width: 1440px;
+    width: 100%;
   }
 
   .example__wrap {
-    width: $desktop-width;
+    width: 100%;
     padding: 0 110px 96px;
     border: none;
     background-image: linear-gradient(to bottom, #ffffff 136px, #eaeaea 136px);
