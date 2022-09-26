@@ -94,6 +94,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 151px;
+    width: 100%;
   }
 
   .actions__list {
@@ -149,12 +150,21 @@
       z-index: -1;
     }
   }
+
+  .actions__desc-br {
+    display: initial;
+  }
 }
 // десктоп версия
 @media (min-width: $desktop-width) {
   .actions__wrap {
     width: 1440px;
     padding: 0 106px 69px 110px;
+  }
+
+  .actions__item::after {
+    left: 0;
+    top: -3px;
   }
 
   .actions__list {

@@ -26,17 +26,17 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2029897-cat-energy-26) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.webp">
 
 Получится вот так:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.webp">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.webp">
 
 Клонировать репозиторий можно так:
 
@@ -50,7 +50,7 @@ git clone SSH-адрес_вашего_форка
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
+<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.webp"></a>
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 

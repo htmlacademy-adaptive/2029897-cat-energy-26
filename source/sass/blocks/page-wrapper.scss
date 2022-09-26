@@ -1,3 +1,7 @@
+.page-wrapper {
+  overflow-x: hidden;
+}
+
 @media (min-width: $desktop-width) {
   .page-wrapper {
     width: 1440px;
@@ -5,5 +9,6 @@
     display: flex;
     padding: 0 110px 86px;
     gap: 80px;
+    overflow-x: initial;
   }
 }

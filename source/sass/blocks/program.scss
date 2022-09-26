@@ -2,8 +2,12 @@
   @include centre;
 }
 
+.program {
+  overflow-x: hidden;
+}
+
 .program__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -28,11 +32,11 @@
   &::after {
     position: absolute;
     content: "";
-    background-color: $green;
+    background-color: #68b738;
     height: 2px;
-    width: 99px;
+    width: 100vw;
     top: 15px;
-    right: -19px;
+    left: 202px;
   }
 }
 
@@ -44,11 +48,11 @@
   &::after {
     position: absolute;
     content: "";
-    background-color: $green;
+    background-color: #68b738;
     height: 2px;
-    width: 158px;
+    width: 100vw;
     top: 15px;
-    right: -177px;
+    left: 136px;
   }
 }
 
@@ -62,9 +66,9 @@
     content: "";
     background-color: $green;
     height: 2px;
-    width: 136px;
+    width: 100vw;
     top: 15px;
-    right: -157px;
+    left: 163px;
   }
 }
 
@@ -76,7 +80,7 @@
   margin: 0;
   margin-bottom: 39px;
   margin-left: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -195,7 +199,7 @@
   padding-left: 14px;
   padding-right: 40px;
   padding-top: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   border: 1px solid #e7e7e7;
@@ -315,7 +319,7 @@
 }
 
 .program__comment-textarea {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -323,6 +327,7 @@
   color: inherit;
   text-transform: uppercase;
   padding: 6px 12px 9px 15px;
+  resize: none;
 }
 
 
@@ -331,7 +336,7 @@
   height: 40px;
   color: #ffffff;
   background-color: #68b738;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -380,6 +385,17 @@
   color: #222222;
 }
 
+.program__label-textarea {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 // планшетная версия
 @media (min-width: $tablet-width) {
@@ -408,33 +424,37 @@
   }
 
   .program__title--owner::after {
-    width: 145px;
+    width: 200vw;
     top: 21px;
-    right: -182px;
+    left: -64%;
   }
 
   .program__title--comment::after {
-    width: 478px;
-    top: 20px;
-    right: -515px;
+    width: 200vw;
+    top: 22px;
+    left: -139%;
   }
 
   .program__title--additionally::after {
-    width: 446px;
+    width: 200vw;
     top: 21px;
-    left: 251px;
+    left: -124%;
   }
 
-  .program__title--owner::before,
-  .program__title--comment::before,
-  .program__title--additionally::before {
-    position: absolute;
-    content: "";
-    background-color: $green;
-    height: 2px;
-    width: 30px;
-    top: 21px;
-    left: -70px;
+  .program__title--owner-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+
+  .program__title--additionally-text {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .program__desc {
@@ -508,12 +528,28 @@
     margin-bottom: 22px;
   }
 
-  .program__title--comment,
   .program__title--owner {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
     padding-left: 0;
+    margin-left: -41px;
+  }
+
+  .program__title--comment {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+    padding-left: 0;
+    margin-left: -42px;
+  }
+
+  .program__title--comment-text {
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .program__label--owner-email {
@@ -556,6 +592,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 63px;
+    margin-left: -40px;
   }
 
   .program__additionally-list {
@@ -590,7 +627,7 @@
   .program__button {
     width: 282px;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     line-height: 0px;
     height: 52px;
     margin: 0;
@@ -677,7 +714,7 @@
   }
 
   .program__comment-textarea {
-    width: 1120px;
+    width: 1224px;
     height: 174px;
   }
 
@@ -734,32 +771,20 @@
   }
 
   .program__title--owner::after {
-    width: 778px;
+    width: 200vw;
     top: 20px;
-    right: -814px;
+    left: -100%;
   }
 
   .program__title--comment::after {
-    width: 1108px;
+    width: 200vw;
     top: 22px;
-    right: -1149px;
+    left: -215%;
   }
 
   .program__title--additionally::after {
-    width: 1078px;
+    width: 200vw;
     top: 23px;
-    left: 251px;
-  }
-
-  .program__title--owner::before,
-  .program__title--comment::before,
-  .program__title--additionally::before {
-    position: absolute;
-    content: "";
-    background-color: $green;
-    height: 2px;
-    width: 70px;
-    top: 22px;
-    left: -111px;
+    left: -200%;
   }
 }

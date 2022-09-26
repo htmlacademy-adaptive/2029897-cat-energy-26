@@ -1,6 +1,6 @@
 .page__body {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -8,6 +8,7 @@
   background-color: #ffffff;
   color: #000000;
   margin: 0;
+  overflow-x: hidden;
 }
 
 @media (min-width: $desktop-width) {
@@ -15,7 +16,7 @@
     content: "";
     width: 50%;
     height: 694px;
-    background-image: url("../img/background-index-desktop.jpg");
+    background-image: url("../img/background-index-desktop.webp");
     position: absolute;
     top: 0;
     right: 0;
@@ -25,7 +26,7 @@
     background-position-x: right;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-index-desktop@2x.jpg");
+      background-image: url("../img/background-index-desktop@2x.webp");
     }
   }
 }

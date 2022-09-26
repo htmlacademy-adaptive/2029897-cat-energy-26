@@ -3,7 +3,7 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -32,10 +32,14 @@
   &:last-child {
     border-bottom: 1px solid #ebebeb;
   }
+
+  &:nth-child(1) .catalog__img-wrap {
+    margin-top: -11px;
+  }
 }
 
 .catalog__item-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -313,6 +317,10 @@
   .catalog__btn-show {
     width: 100%;
   }
+
+  .catalog__item:nth-child(1) .catalog__img-wrap {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -371,5 +379,9 @@
 
   .catalog__features-list {
     margin-top: 20px;
+  }
+
+  .catalog__item:nth-child(1) .catalog__img-wrap {
+    margin-top: 0;
   }
 }

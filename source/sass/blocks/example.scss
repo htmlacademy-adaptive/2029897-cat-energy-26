@@ -50,7 +50,7 @@
 }
 
 .example__data-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -78,7 +78,7 @@
 
 .example__expenses {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -98,7 +98,7 @@
 .example__btn {
   width: 49px;
   height: 30px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -183,14 +183,13 @@
 // Планшетная версия
 @media (min-width: $tablet-width) {
   .example {
-    background-color: #ffffff;
-    width: 768px;
+    background-image: linear-gradient(to top, #eaeaea 465px, #ffffff 465px);
+    width: 100%;
     margin: 0 auto;
   }
 
   .example__wrap {
-    width: 100%;
-    background-image: linear-gradient(to top, #eaeaea 465px, #ffffff 465px);
+    width: 768px;
     padding: 43px 30px 101px 30px;
     border-top: 1px solid #e6e6e6;
     position: relative;
@@ -282,14 +281,15 @@
 // десктопная версия
 @media (min-width: $desktop-width) {
   .example {
-    width: 1440px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ffffff 136px, #eaeaea 136px);
   }
 
   .example__wrap {
-    width: $desktop-width;
+    width: 1440px;
     padding: 0 110px 96px;
     border: none;
-    background-image: linear-gradient(to bottom, #ffffff 136px, #eaeaea 136px);
+    background-image: none;
   }
 
   .example__title {
