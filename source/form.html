@@ -121,9 +121,10 @@
           <span class="navigation-menu__toggle-text">Открыть меню</span></button>
         <ul class="navigation-menu__list">
           <li class="navigation-menu__item">
-            <a class="navigation-menu__link" href="index.html">Главная</a></li>
-          <li class="navigation-menu__item"><a class="navigation-menu__link"
-              href="catalog.html">Каталог продукции</a></li>
+            <a class="navigation-menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-menu__item"><a class="navigation-menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
           <li class="navigation-menu__item navigation-menu__item--active"><a class="navigation-menu__link"
               href="form.html">Подбор программы</a></li>
         </ul>
@@ -173,7 +174,9 @@
           </div>
           <!-- данные владельца -->
           <fieldset class="program__fieldset program__fieldset--owner">
-            <legend class="program__title program__title--owner">Контактные данные (владельца кота)</legend>
+            <legend class="program__title program__title--owner">
+              <span class="program__title--owner-text"> Контактные данные (владельца кота)</span>
+            </legend>
             <div class="program__fieldset-wrap"><label class="program__label program__label--owner-email"><span
                   class="program__name-label program__name-label--owner-email">E-MAIL:<sup>*</sup></span> <input
                   class="program__input program__input--owner" type="email" name="owner-input" id="owner-input"
@@ -188,14 +191,18 @@
           </fieldset>
           <!-- комментарий -->
           <fieldset class="program__fieldset program__fieldset--comment">
-            <legend class="program__title program__title--comment">Комментарий</legend>
-             <label class="program__label-textarea" for="comment-textarea">Расскажите обо всех повадках кота</label>
+            <legend class="program__title program__title--comment">
+              <span class="program__title--comment-text">Комментарий</span>
+            </legend>
+            <label class="program__label-textarea" for="comment-textarea">Расскажите обо всех повадках кота</label>
             <textarea class="program__comment-textarea" rows="8" name="comment-textarea" id="comment-textarea"
-              placeholder="Расскажите обо всех повадках кота" maxlength="250"></textarea>
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <!-- дополнительно чекбоксы-->
           <fieldset class="program__fieldset program__fieldset--additionally">
-            <legend class="program__title program__title--additionally">Дополнительно</legend>
+            <legend class="program__title program__title--additionally">
+              <span class="program__title--additionally-text">Дополнительно</span>
+            </legend>
             <ul class="program__additionally-list">
               <li class="program__additionally-item"><label class="program__label program__label--checkbox-field"><input
                     class="program__input program__input--checkbox-field" type="checkbox" name="sugar-substituter"
@@ -221,7 +228,8 @@
         </form>
       </div>
     </section>
-  </main><!-- ФУТЕР -->
+  </main>
+  <!-- ФУТЕР -->
   <footer class="page-footer">
     <!-- карта и адрес -->
     <section class="address">
@@ -260,10 +268,14 @@
               </svg> <span class="contacts__title">Telegram</span></a></li>
         </ul>
         <!-- html академия -->
-        <div class="contacts__copyright"><a class="contacts__copyright-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a> <a
-            class="contacts__copyright-logo" href="htmlacademy.ru"><svg width="27" height="34">
+        <div class="contacts__copyright">
+          <a class="contacts__copyright-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="contacts__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34">
               <use href="#copyright-logo"></use>
-            </svg></a></div>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </footer>

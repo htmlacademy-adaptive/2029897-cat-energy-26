@@ -102,7 +102,6 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    padding-left: 37px;
     text-align: start;
     margin-bottom: 80px;
   }
@@ -160,8 +159,8 @@
 
   .additional-products__title::after {
     width: 200vw;
-    top: 23px;
-    left: -100%;
+    top: 21px;
+    left: -50%;
   }
 }
 
@@ -176,6 +175,7 @@
   .additional-products__title {
     padding: 0;
     margin-bottom: 81px;
+    margin-left: -31px;
   }
 
   .additional-products__list {
@@ -225,8 +225,16 @@
   }
 
   .additional-products__title::after {
-    width: 957px;
+    width: 200vw;
     top: 26px;
-    left: 374px;
+    left: -50%;
+  }
+
+  .additional-products__title-text {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    padding-left: 29px;
+    padding-right: 38px;
   }
 }
